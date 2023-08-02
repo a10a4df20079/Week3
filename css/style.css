@@ -83,7 +83,6 @@ a {
 	@media(max-width: 768px){
 	max-width: 720px;
 	}
-
 	@media (max-width: 375px){
     max-width: 372px;
   	}
@@ -111,26 +110,13 @@ a {
 }
 .navbar-logo{
 	width: 80px;
-
-	@media(max-width: 768px){
-	margin: 0 0 16px 16px;
-	}
 }
 .list{
 	display: flex;
 	align-items: center;
-
-	@media(max-width: 768px){
-		flex-wrap: wrap;
-	}
 }
 .navbar-item{
 	height: 100%;
-
-	@media(max-width: 768px){
-	width: 50%;
-	margin-left: 0;
-	}
 }
 .navbar-item:hover{
 	background-color: #ffffff;
@@ -142,12 +128,6 @@ a {
 	display: block;
 	padding: 8px 32px;
 	font-size: 20px;
-
-	@media(max-width: 768px){
-	font-size: 16px;
-	text-align: center;
-	padding: 12px 0;
-	}
 }
 .navbar-link:hover{
 	color: #9F1213;
@@ -196,11 +176,11 @@ select{
 	font-size: 24px;
 	border: #00000020 1px solid;
 	line-height: 36px;
-	padding-left: 24px;
-	margin-bottom: 22px;
+	padding: 8px 0 8px 24px;
 }
 .content-info{
 	border: #00000020 1px solid;
+	padding: 16px 0 16px 0;
 }
 .content-list li{
 	font-size: 20px;
@@ -210,6 +190,9 @@ select{
 .content-item{
 	margin-left: 24px;
 }
+.material-symbols-outlined{
+	margin-right: 15px;
+}
 .content-map{
 	
 	padding-left: 20px;
@@ -217,7 +200,12 @@ select{
 .ml-27{
 	margin-left: 27px;
 }
-
+.df{
+	display: flex;
+}
+.aic{
+	align-items: center;
+}
 
 .mb-80{
 	margin-bottom: 80px;
@@ -285,27 +273,47 @@ select{
 
 	.navBar{
 	flex-direction: column;
+	padding-bottom: 0;
+	}
+	.navbar-item{
+	width: 50%;
+	margin-left: 0;
+	}
+	.navbar-link{
+	font-size: 16px;
+	text-align: center;
+	padding: 12px 0;
 	}
 	.navBar img{
-	max-width: 10%;
+	max-width: 30%;
+	margin: 0 0 16px 16px;
 	}
 	.content-main{
 		flex-direction: column;
 	}
 	.content-list{
 		display: flex;
+		width: 100%;
+		justify-content: space-between;
 	}
 
 	.content-list img{
 		background-image: url(../img/store-1.png);
+		width: 48%;
 	}
-
+	.t-flex{
+		margin-left: 24px;
+	}
 
 	.content-map{
 		width: 100%;
 		padding-left: 0px;
+		margin-top: 26px;
 	}
-
+	.list{
+		flex-wrap: wrap;
+	}
+	}
 	.list li{
 		padding-right: 24px;
 		padding-top: 10px;
@@ -347,7 +355,8 @@ select{
 	.copyright__law a:nth-child(1) {
 		margin-right: 48px;
 	}
-}
+
+
 
   @media(max-width: 375px){
 	.container{
@@ -357,9 +366,15 @@ select{
 		width: 100%;
 		flex-direction: column;
 	}
+	.content-list img{
+		width: 100%;
+	}
 	.content-info{
 		margin-left: 0px;
 		width: 100%;
+	}
+	.t-flex{
+		margin-left: 0;
 	}
 	.footer{
 		margin-bottom: 0;
